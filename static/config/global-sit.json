@@ -1,0 +1,11 @@
+{
+	"BASE_URL": "http://192.168.7.107:8080/ezview",
+	"AJAX_TIMEOUT": 30000,
+	"CLOUD_RBAC_URL": "http://dev.ctsp.kedacom.com/cloud-rbac",
+	"REFRESH_TOKEN_URL": "http://192.168.7.107:8080/ezview/oauth2/refreshToken",
+	"CLIENT_SIGN": "yuanqu-ezview-backend",
+	"SECRET_KEY": "kedacom",
+	"WINDOWS":
+	[],
+	"POPUP": "Y"
+}

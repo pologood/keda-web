@@ -1,0 +1,113 @@
+@charset "UTF-8";
+$hcolor: #334B80;    // primary  高亮颜色
+$hoverColor: #7D8CB4; // primary-hover方法
+$bcolor: #EBEFF7; // 页面背景颜色
+
+$blackColor: #252525; // 黑体文字
+$normalColor: #575A5F; // 正常文字颜色
+$linkColor: #1D50A1;
+$lineColor: #3E62AD; // title前竖线icon的颜色
+$pdwidth: 0.8rem; // 距离四周padding间距
+/*************************common start*************************************/
+html, body, textarea {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family:PingFangSC-Medium,'Microsoft Yahei','Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:$blackColor;
+	font-size: 12px;
+}
+/*************************common end*************************************/
+/*************************滚动条 start*************************************/
+::-webkit-scrollbar { /* 滚动条整体部分 */
+	width: 4px !important;
+	margin-right: 6px;
+}
+
+::-webkit-scrollbar-button { /* 滚动条两端的按钮 */
+	//width: 120px;
+	// height: 20px;
+	// background-color: #ffffff;
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 6px;
+	margin-bottom: 2px;
+}
+
+::-webkit-scrollbar-track { /* 外层轨道 */
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-track-piece { /*内层轨道，滚动条中间部分  */
+	// background-color: #ffffff;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb { /* 滑块 */
+	border-radius: 4px;
+	background: #D1DAEC;
+}
+
+// input{
+// 	font-size: $--font-size-base !important;
+// }
+// .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+// 	background-color:  $--color-primary !important;
+// 	border-color:  $--color-primary !important;
+// }
+// .el-checkbox__input.is-checked+.el-checkbox__label{
+// 	color:  $--color-primary !important;
+// }
+// .el-checkbox__inner:hover {
+// 	border-color:$--color-primary !important;
+// }
+
+// .el-checkbox__input.is-focus .el-checkbox__inner {
+// 	border-color:$--color-primary !important;
+// }
+
+.color-theme{color: #005BAC;}
+.typeface-pf{font-family: "PingFang SC"}
+.typeface-yh{font-family: "Microsoft YaHei"}
+.typeface-ar{font-family: "Arial"}
+.typeface-he{font-family: "Helvetica"}
+.typeface-im{font-family: "Impact"}
+.keda-bg-info{background: #909399;}
+.keda-bg-success{background: #64C42D;}
+.keda-bg-warning{background: #F3AC34;}
+.keda-bg-danger{background: #F76B69;}
+.keda-bg-regular{background:#303133; }
+.keda-bg-primary{background:#606266; }
+.keda-bg-secondary{background:#909399; }
+.keda-bg-placeholder{background:#C0C4CC; }
+.keda-bg-base{background:#DCDFE6; }
+.keda-bg-light{background:#E4E7ED; }
+.keda-bg-lighter{background:#EBEEF5; }
+.keda-bg-extralight{background:#F2F6FC; }
+.box-padding{
+	padding: $pdwidth!important;
+	height: 100%;
+}
+h1.keda-ht,h2.keda-ht,h3.keda-ht{ color: #333;font-weight: normal;}
+h1.keda-ht{font-size: 18px;font-weight: 600;letter-spacing:.05rem;}
+h2.keda-ht{font-size: 16px;}
+h3.keda-ht{font-size: 14px;}
+.text-regular{font-size:14px;color: #606266;}
+.text-smaller{font-size:12px;color: #909399;}
+.text-smaller-light{font-size:12px;color: #C0C4CC;}
+.el-input__inner:focus{border-color:#005bac;}
+.el-table td, .el-table th{padding: 0;height: 46px;vertical-align: middle;font-size: 14px;}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner,.el-switch.is-checked .el-switch__core,.el-radio__input.is-checked .el-radio__inner{background-color: #005bac;border-color:#005bac;}
+.el-select .el-input.is-focus .el-input__inner,.el-textarea__inner:focus,.el-radio__inner:hover,.el-select .el-input__inner:focus{border-color:#005bac;}
+.el-date-table td.available:hover,.el-date-table td.today span,.el-picker-panel__icon-btn:hover,.el-date-picker__header-label.active, .el-date-picker__header-label:hover,.el-time-panel__btn.confirm,.el-checkbox__input.is-checked+.el-checkbox__label,.el-radio__input.is-checked+.el-radio__label,.el-select-dropdown__item.selected,.el-message-box__headerbtn:focus .el-message-box__close, .el-message-box__headerbtn:hover .el-message-box__close{color: #005bac;}
+.el-message-box__btns .el-button--default,.el-message-box__btns .el-button--primary{padding: 9px 13px;}
+.el-pager li{min-width: auto;width: 28px;height: 28px;padding: 0;color: #909399;background-color:transparent;}
+.el-pager li.active{/*background: #f2f9ff;*/border-radius: 50%;}
+.btn-next .el-icon, .el-pagination .btn-prev .el-icon{color: #909399;}
+.m-scroll::-webkit-scrollbar {width: 4px;height: 4px;}
+.m-scroll::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);border-radius: 0.2px;}
+.el-time-spinner__item.active:not(.disabled){color: #005bac;}
+.el-scrollbar .el-scrollbar__wrap{overflow: auto;overflow-x: hidden;}

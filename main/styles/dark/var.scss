@@ -1,0 +1,23 @@
+$color-main-background: #EBEFF7 !default;
+//sidebar
+$color-main-menu-bg:#304156 !default;
+$color-main-menu-hover:#001528 !default;
+$subMenuBg:#1f2d3d !default;
+$menuHover:#001528!default;
+//个人中心浮窗图标颜色
+$--modal-header-bg:#252A43!default;
+$menu-icon-bg:#EEEEF0!default;
+$menu-icon-border:#AFB0B9!default;
+$menu-icon-default: #252A43 !default;
+$menu-icon-hover: #fff !default;
+$main-assets-path: '../../../main/assets' !default;
+$main-images-login-text: $main-assets-path + '/images/login-text-dark.png' !default;
+//NavBar
+//font
+$color-kc-menu-item: #60688D !default;
+$color-kc-submenu-title: #60688D !default;
+$color-kc-menu-item-active: #fff !default;
+$color-kc-submenu-active: #fff !default;
+//tags-view-item
+$color-tags-bg: #161824 !default;
+$color-tags-active-bg: #427BF1 !default;

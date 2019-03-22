@@ -1,0 +1,91 @@
+
+.userMgt-organization-roleManagement{
+	background-color: $--view-background;
+	height: calc(100% - 3rem);
+	overflow: hidden;
+	position: relative;
+	.msgbox {
+		opacity: 0.5;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 3;
+		background-color: $--color-box-bg-light;
+	}
+	.kc-tabs--border-card {
+		border: none;
+		box-shadow: none;
+		.kc-tabs__content {
+			padding: 0;
+		}
+		.kc-tabs__header {
+			border-bottom: none;
+		}
+	}
+	.all-user-role {
+		.kc-tabs__item {
+			font-size: .8rem;
+			color:$--font-color;
+			text-align: center !important;
+			width: 50% !important;
+		}
+		.kc-tabs__content{
+			height: calc(100% - 2.1rem);
+			.kc-tab-pane{
+				height: 100%;
+			}
+		}
+		.kc-tabs__nav.is-top {
+			width: 100%;
+			.kc-tabs__item {
+				color:$--font-color;
+			}
+		}
+		.kc-table {
+			th{
+				background-color: $--button-background;
+			}
+		}
+
+	}
+	.kc-table--border th,
+	.kc-table__fixed-right-patch {
+		//border-bottom: 0px;
+	}
+
+	.kc-table tr {
+		//background-color: $--button-background;
+	}
+	.tableStyle {
+		width: 100%;
+		overflow: auto;
+		height: calc(100% - 3.4rem);
+		scrollbar-face-color: #b46868;
+		table-layout: fixed;
+		margin-top: .8rem;
+	}
+
+	.roleDialog {
+		/deep/ .role-auth .role-tab {
+			position: static;
+		}
+		height: 28rem !important;
+	}
+	.kc-tabs__content {
+		height: 100%;
+	}
+	.search-btn {
+		line-height: 2rem;
+		font-size: .9rem;
+		cursor: pointer;
+	}
+	//取消modal 上下边距 因为内容已经添加边距
+	.kc-modal__body {
+		padding-bottom: 0 !important;
+	}
+	.kc-modal__footer {
+		padding-top: 0 !important;
+	}
+}

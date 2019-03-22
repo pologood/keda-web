@@ -1,0 +1,38 @@
+@import "var.scss";
+
+@import "../administrativeArea/administrativeArea.scss";
+@import "../administrativeArea/areaDetail.scss";
+@import "../administrativeArea/areaTree.scss";
+
+@import "../organization/detailsOfOrganization.scss";
+@import "../organization/memberArea.scss";
+@import "../organization/organization.scss";
+@import "../organization/roleManagement.scss";
+@import "../organization/userTree.scss";
+
+@import "../roleMan/roleManagement.scss";
+@import "../roleMan/roleDetail";
+@import "../roleMan/roleInfoManagement";
+@import "../roleMan/functionMenu/index.scss";
+@import "../roleMan/tollgatesResource/device.scss";
+@import "../roleMan/tollgatesResource/deviceTree.scss";
+@import "../roleMan/tollgatesResource/groupTree.scss";
+@import "../roleMan/tollgatesResource/group.scss";
+@import "../roleMan/videoResource/group.scss";
+@import "../roleMan/videoResource/deviceTree.scss";
+@import "../roleMan/videoResource/device.scss";
+@import "../roleMan/videoResource/attrAuth.scss";
+@import "../roleMan/videoResource/groupTree.scss";
+
+@import "../userMgt/businessMain.scss";
+@import "../userMgt/gisMain.scss";
+@import "../userMgt/userSelect";
+@import "../userMgt/memberArea.scss";
+@import "../userMgt/policeCategories.scss";
+@import "../userMgt/userInfo.scss";
+@import "../userMgt/userList.scss";
+@import "../userMgt/userRole.scss";
+@import "../userMgt/userTree.scss";
+@import "../roleAuth/roleAuth.scss";
+
+@import "../main.scss";

@@ -1,0 +1,61 @@
+.userMgt-userList {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	background-color: $--body-background;
+	.user-left {
+		height: 100%;
+		width: 16.4rem;
+		background-color: $--view-background;
+		margin-right: 0;
+		box-sizing: border-box;
+		.left-tree {
+			background-color: $--view-background;
+			height: 100%;
+			padding: $pdwidth;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			.tree-title {
+				text-align: left;
+				font-size:$--big-size;
+				font-family:PingFangSC-Regular;
+				font-weight:400;
+				margin-bottom: $pdwidth;
+				color:$--sub-title-color;
+			}
+		}
+	}
+	.user-center {
+		width: 60rem;
+		height: 100%;
+		margin: 0 $pdwidth;
+		padding: $pdwidth;
+		box-sizing: border-box;
+		background-color: $--view-background;
+		.user-title {
+			text-align: left;
+			font-size:$--big-size;
+			font-family:PingFangSC-Regular;
+			font-weight:400;
+			margin-bottom: $pdwidth;
+			color:$--sub-title-color;
+		}
+	}
+	.user-right {
+		width: 16.4rem;
+		height: 100%;
+		padding: $pdwidth;
+		background-color: $--view-background;
+		box-sizing: border-box;
+		.role-title {
+			font-size:$--big-size;
+			font-family:PingFangSC-Regular;
+			font-weight:400;
+			margin-bottom: $pdwidth;
+			color:$--sub-title-color;
+		}
+	}
+}
+

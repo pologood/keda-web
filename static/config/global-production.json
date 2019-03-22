@@ -1,0 +1,11 @@
+{
+	"BASE_URL": "http://dev.ctsp.kedacom.com/kiaf-server",
+	"AJAX_TIMEOUT": 30000,
+	"CLOUD_RBAC_URL": "http://dev.ctsp.kedacom.com/cloud-rbac",
+	"REFRESH_TOKEN_URL": "http://192.168.7.107:8080/kiaf/oauth2/refreshToken",
+	"CLIENT_SIGN": "kiaf-server",
+	"SECRET_KEY": "kedacom",
+	"WINDOWS":
+	[],
+	"POPUP": "Y"
+}

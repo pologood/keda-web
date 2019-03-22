@@ -1,0 +1,115 @@
+
+.userMgt-roleAuth {
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+	.kc-tabs__content {
+		overflow: hidden;
+		height: calc(100% - 2.4rem);
+	}
+	.role-tab {
+		position: absolute;
+		width: 100%;
+		box-sizing: border-box;
+		height: 100%;
+		>div.kc-tabs__header{
+			.kc-tabs__nav{
+				display: flex;
+				width: 100%;
+			}
+			.kc-tabs__item {
+				flex: 1;
+				text-align:center;
+				font-size:0.8rem;
+				color:$--font-color;
+			}
+			.kc-tabs__item.is-active{
+				flex: 1;
+				text-align:center;
+				font-size:0.8rem;
+				color:$--sub-title-active-color;
+			}
+		}
+		.fun-menu-wrapper {
+			height: 100%;
+		}
+		.video-resources-wrapper {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			color:$--font-color;
+			.kc-select {
+				display: inline-block;
+				position: relative;
+				margin: 0.8rem 1.5rem .8rem 0.5rem;
+				.kc-input__inner{
+					height: 1.8rem;
+					line-height: 1.8rem;
+					background: $common-input-bg;
+					color: $--color-editable-input;
+					border: solid 0.05rem $--color-box-border;
+				}
+			}
+		}
+	}
+	.videoResources {
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		box-sizing: border-box;
+	}
+	.video-resources-attr {
+		height: 100%;
+	}
+	.resources-content {
+		display: flex;
+		height: 100%;
+		.left {
+			flex: 0 0 16rem;
+			height: 100%;
+			border: .05rem solid $--color-box-border;
+			box-sizing: border-box;
+		}
+		.right {
+			flex: 1;
+			height: 100%;
+			margin-left: 1rem;
+			border: .05rem solid $--color-box-border;
+			box-sizing: border-box;
+		}
+	}
+	.device-left, .device-right, .group-left, .group-right, .attr-left, .attr-right {
+		border-radius: 0.2rem;
+		overflow: hidden;
+	}
+	.el-tabs[disabled]{
+		opacity: 0.5;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+	.lg-killer-bottom {
+		text-align: left;
+		padding-left: 2.5rem;
+	}
+}
+
+.kc-select-dropdown{
+	border:solid 2px $--color-box-border;
+	background: $--view-background;
+	.kc-select-dropdown__item.hover, .kc-select-dropdown__item:hover {
+		background-color: $--color-box-bg;
+		color: $--sub-title-active-color;
+	}
+}
+
+.v-modal ~ .kc-select-dropdown{
+	border:solid 2px $--white-bg;
+	background: $--white-bg;
+	.kc-select-dropdown__list{
+		background-color: $--white-bg;
+	}
+	.kc-select-dropdown__item.hover, .kc-select-dropdown__item:hover {
+		background-color: $--model-content-title-bg;
+		color: $--sub-title-active-color;
+	}
+}

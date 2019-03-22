@@ -1,0 +1,23 @@
+
+.userMgt-roleMan-tollgatesResource-groupTree {
+	height: 100%;
+	.header-bg {
+		background-color: $--header-title-bg;
+		.header-title {
+			padding-left: 0.5rem;
+			height: 2rem;
+			line-height:2rem;
+			font-size:$--small-size;
+			color:$--sub-title-active-color;
+			font-weight:600;
+		}
+	}
+	.left-tree {
+		height: calc(100% - 2.4rem);
+		padding: 0.2rem;
+		box-sizing: border-box;
+		overflow: auto;
+	}
+}
+
+

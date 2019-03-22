@@ -1,0 +1,165 @@
+.kiaf-userMgt-roleMan-roleDetail {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.title {
+			height: 1rem;
+			line-height: 1rem;
+			font-size: $--big-size;
+			font-family: PingFangSC-Regular;
+			font-weight: normal;
+			color: $--sub-title-color;
+		}
+		> p {
+			display: inline-block;
+			font-size: $--small-size;
+			color: $--font-color;
+			i {
+				font-size: $--big-size;
+				margin-right: 0.2rem;
+				line-height: 1.2rem;
+				vertical-align: middle;
+			}
+			span {
+				line-height: 1.2rem;
+				display: inline-block;
+				vertical-align: middle;
+				&:hover {
+					cursor: pointer;
+					color: $--font-icon-name-color;
+				}
+			}
+			&:hover i {
+				cursor: pointer;
+				color: $--icon-hover-primary;
+			}
+			&:hover {
+				cursor: pointer;
+				color: $--font-icon-name-color;
+			}
+		}
+	}
+	.role-detail-wrapper {
+		flex: 0 0 0rem;
+		.form-body {
+			background: $--form-bg;
+			box-sizing: border-box;
+			margin-top: .8rem;
+			padding: .8rem;
+			.form-inline {
+				display: flex;
+				flex-wrap: wrap;
+				.item {
+					margin-bottom: 0.8rem;
+					width: 33.33%;
+					margin-right: 0;
+					display: flex;
+					flex-wrap: nowrap;
+					.kc-form-item__content {
+						flex: 1;
+						.kc-input{
+							.kc-input__inner{
+								background: $common-input-bg;
+								border: none;
+								width: 100%;
+								height: 1.8rem;
+								border-radius:4px;
+								color: $--color-editable-input;
+							}
+							&.is-disabled{
+								.kc-input__inner{
+									background: $common-input-disable-bg;
+									color: $--color-disabled-input;
+								}
+							}
+						}
+
+					}
+				}
+				.time{
+					.kc-input {
+						width: 100%;
+					}
+				}
+				.area {
+					display: flex;
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 0;
+					.kc-form-item__content {
+						flex: 1
+					}
+					.kc-textarea__inner {
+						width: 100%;
+						background: $common-input-bg;
+						border: none;
+						border-radius:4px;
+						color: $--color-editable-input;
+					}
+					textarea{
+						height: 1.8rem;
+						border: none;
+						border-radius:4px;
+					}
+					.kc-textarea{
+						&.is-disabled{
+							.kc-textarea__inner{
+								background: $common-input-disable-bg;
+								color: $--color-disabled-input;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.role-resource-wrapper {
+		margin-top: 1rem;
+		flex: 1;
+		padding-bottom: 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		.content {
+			flex: 1;
+		}
+	}
+	.btn-wrapper {
+		margin-top: .8rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		.btn-group {
+			.btn-origin {
+				width: 6rem;
+				height: 2rem;
+				border-radius: 0.2rem;
+				padding: 0;
+			}
+			.button--primary {
+				border: 1px solid $--button-border-color-active;
+				background-color: $--button-background-active;
+				color: $--button-font-color-active;
+				&:hover {
+					background-color: $--color-primary-bg;
+				}
+			}
+			.button--default {
+				border: 1px solid $--button-border-color;
+				background-color: $--button-background;
+				color: $--button-font-color;
+				&:hover {
+					border: 1px solid $--button-border-color-active;
+					background-color: $--button-background;
+				}
+			}
+		}
+	}
+}
+
+

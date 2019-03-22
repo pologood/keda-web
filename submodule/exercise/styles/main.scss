@@ -1,0 +1,110 @@
+$pdwidth: 0.8rem; // 距离四周padding间距
+body{
+	background: $--body-background;
+}
+.box-padding{
+	padding: $pdwidth!important;
+	height: 100%;
+    background: $--body-background;
+}
+.kc-loading-mask {
+	background: $--view-background;
+}
+.kd-frame {
+	overflow: hidden!important;
+}
+.kc-layout {
+	background: $--body-background;
+}
+.kc-checkbox__inner {
+	background-color: transparent;
+	border: 0.05rem solid $--checkbox-border-color;
+}
+//取消modal 上下边距 因为内容已经添加边距
+.kc-modal__body {
+	padding: 0.8rem;
+}
+.kc-modal__headerbtn {
+	font-size: 1rem;
+}
+//所有icon的样式管理
+.keda-icon-style{
+	color:$--icon-font-color;
+	&:hover{
+		color:$--icon-hover-primary;
+	}
+}
+.kedaIconfont:hover{
+	cursor: pointer;
+}
+.keda-icon-heavy-style{
+	color:$--icon-font-heavy-color;
+	&:hover{
+		cursor: pointer;
+		color:$--icon-hover-primary!important;
+	}
+}
+.kc-pagination{
+	.kc-select .kc-input .kc-input__inner {
+		padding-right: 1.25rem;
+		border-radius: 0.15rem;
+		height: 1.4rem;
+		background: none;
+		border: none;
+	}
+	.kc-pagination__editor.kc-input .kc-input__inner {
+		width: 3rem;
+		height: 1.4rem;
+		background: transparent;
+		border: none;
+	}
+	.btn-prev,.btn-next {
+		background: none;
+	}
+	button:disabled {
+		background-color:transparent;
+	}
+	.kc-pager li {
+		background: none;
+	}
+}
+::-webkit-scrollbar-track {background: $--webkit-scrollbar-track-bg!important;-webkit-box-shadow: inset 0 0 4px $--webkit-scrollbar-track-shadow;border-radius: 0.5rem;}
+::-webkit-scrollbar-thumb {border-radius: 0.5rem;background: $--webkit-scrollbar-thumb-bg!important;-webkit-box-shadow: inset 0 0 6px $--webkit-scrollbar-thumb-shadow;}
+.kc-modal{
+	.kc-modal__header{
+		background: $--modal-header-bg;
+	}
+	.kc-modal__body {
+		padding: 0.8rem;
+		.kc-loading-mask{
+			background: #fff;
+		}
+		/deep/ .role-auth .role-tab {
+			position: static;
+		}
+		.userMgt-roleAuth {
+			height: 25rem;
+			.kc-tabs /deep/ .kc-tabs__content {
+				height: calc(100% - 2rem);
+				overflow: hidden;
+			}
+			.resources-content .left {
+				.top .header-title {
+					border: .05rem solid $--color-box-border;
+				}
+			}
+			::-webkit-scrollbar {width: 6px;height: 6px;}
+			::-webkit-scrollbar-track {background: #F5F7FA!important;-webkit-box-shadow: inset 0 0 4px $--webkit-scrollbar-track-shadow;border-radius: 0.5rem;}
+			::-webkit-scrollbar-thumb {border-radius: 0.5rem;background: #cccccc!important;-webkit-box-shadow: inset 0 0 6px $--webkit-scrollbar-thumb-shadow;}
+		}
+	}
+	.kc-modal__footer {
+		padding: 0.8rem;
+		padding-top: 0 !important;
+		.kc-button--primary {
+			color: #fff;
+			background-color: $--button-background-active;
+			border-color: $--button-background-active;
+		}
+	}
+}

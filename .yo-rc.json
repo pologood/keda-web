@@ -1,0 +1,9 @@
+{
+    "kiagen": {
+        "existingClientProject": true,
+        "clientFramework": "kiaf@1.2.2-alpha",
+        "baseName": "kiaf",
+        "frameLayout": "upperLower",
+        "getSelectedSourceModule": []
+    }
+}

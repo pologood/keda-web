@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.kc-modal__header{
+	padding: 0.8rem;
+	background: $--color-primary;
+	.kc-icon-close:hover{
+		color:#fff!important;
+	}
+	span{
+		color:#fff;
+	}
+	i{
+		color:#fff!important;
+	}
+}

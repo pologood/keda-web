@@ -1,0 +1,53 @@
+{
+	"sign_menu_gis": "code_frontend_menu_gis",
+	"sign_menu_business": "code_frontend_menu_business",
+	"groupServiceList": {
+		"carTollgate": {
+			"groupType": "0",
+			"deviceTypes": "TOLLGATE",
+			"ar": 0,
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "车辆卡口",
+			"code": "carTollgate"
+		},
+		"video": {
+			"groupType": "1",
+			"deviceTypes": "IPC",
+			"ar": 0,
+			"cameraForms": "1,2,3,4",
+			"cameraAbilitys": "",
+			"name": "视频",
+			"code": "video"
+		},
+		"siteEnforcementRecorder": {
+			"groupType": "2",
+			"deviceTypes": "BWC",
+			"ar": 0,
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "执法记录仪",
+			"code": "siteEnforcementRecorder"
+		},
+		"arDevice": {
+			"groupType": "3",
+			"deviceTypes": "IPC",
+			"ar": 1,
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "AR设备",
+			"code": "arDevice"
+		},
+		"peopleTollgate": {
+			"groupType": "4",
+			"deviceTypes": "IPC",
+			"ar": 0,
+			"cameraForms": "",
+			"cameraAbilitys": "2",
+			"name": "人员卡口",
+			"code": "peopleTollgate"
+		}
+	},
+	"sign_menu": "kd-kiaf-menu",
+	"default_pass": "Pass123456"
+}

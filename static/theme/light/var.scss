@@ -1,0 +1,195 @@
+// 换肤功能的公共样式值设置
+$--color-primary: #427BF1!default;
+$--color-primary-active:#366DDE!default;
+
+$--color-success:#64C42D!default;
+$--color-warning:#F3AC34!default;
+$--color-danger:#F76B69!default;
+$--color-inactive:#999999!default;
+//-----------------背景色
+//default
+$--body-background: #F0F2F5!default;
+$--view-background: #ffffff!default;
+
+$--color-primary-bg: #427BF1!default;
+
+$--color-box-bg:#F5F7FA!default;
+$--color-box-bg-light:#EAF5FF!default;
+
+$--breadcrumbs-bg:#fff!default;//面包屑导航颜色
+$--modal-header-bg:#427BF1!default;
+//title
+$--header-title-bg:#F5F7FA!default;
+//小title
+$--header-little-title-bg:#FFFFFF;
+$--header-little-title-bg-active:#FFFFFF;
+$--header-little-title-color:#60697B;
+$--header-little-title-color-active:#60697B;
+//kc-icon-dot
+$--header-little-title-dot-color:#E8EAEC;
+$--header-little-title-dot-color-active:#427BF1;
+// table
+$--table-bg:#fff!default;
+$--color-th-bg:#F5F7FA!default;
+$--color-td-bg-hover:#F5F7FA!default;
+$--color-td-bg-active:#F5F7FA!default;
+//vav-tag
+$--nav-tag-bg:#fff!default;
+// button
+$--button-background: #FFFFFF!default;
+$--button-background-active: #1671D5!default;
+// form
+$--form-bg:#EAF5FF!default;
+$common-input-bg:#fff!default;
+$common-input-disable-bg:#f5f7fa!default;
+$common-bg-inner: #EAF5FF!default;
+$common-textarea-bg: #fff!default;
+$common-dialog-form-bg: rgba(234,245,255,1)!default;
+
+//-----------------font颜色
+//default
+$--font-color: #666!default;
+$--font-color2: #333!default;
+$--font-hover-color:#666666!default;
+$--font-icon-name-color:#427BF1!default;
+$--kc-tree-color: #5D6071!default;
+//title
+$--min-title-color:#333!default;
+$--sub-title-color:#333!default;
+$--tab-title-color:#333!default!default;
+$--sub-title-active-color:#409EFF!default;
+
+$--lable-font-color:#333!default;
+
+$--list-font-color: #495060!default;
+$--color-text-white:#FFF!default;
+$--color-h3: #333333!default;
+
+$--color-text:#666666!default;
+$--color-text-active:#333333!default;
+$--color-text-placeholder:#DCDFE6!default;
+// table
+$--color-th:#333333!default;
+$--color-td:#666!default;
+$--color-td-font-hover:#666!default;
+$-color-tree-search-table:#9093A6!default;
+// button
+$--button-font-color: #666666!default;
+$--button-font-color-active: #ffffff!default;
+
+//-----------------border 颜色
+//default
+$--color-box-border:#EBEEFA!default;
+$--border-white:#fff!default;
+// table
+$--color-td-bordor:#EBEEF5!default;
+// button
+$--button-border-color: #DCDFE6!default;
+$--button-border-color-active: #1671D5!default;
+//checkbox
+$--checkbox-border-color:#DCDFE6!default;
+
+//-----------------icon 颜色
+//default
+$--icon-font-color:#999!default;
+$--icon-font-heavy-color:#666!default;
+$--color-white-icon:#fff!default;
+$--icon-hover-primary:#427BF1!default;
+// table
+$--color-td-option-icon:#BEC1C9!default;
+// button
+$--button-icon-color:#666!default;
+
+//字体大小定义
+$--xxxxxsmall-size:0.2rem!default;
+$--xxxxsmall-size:0.3rem!default;
+$--xxxsmall-size:0.4rem!default;
+$--xxsmall-size:0.5rem!default;
+$--xsmall-size:0.6rem!default;
+$--small-size:0.7rem!default;
+$--middle-size:0.8rem!default;
+$--big-size:0.9rem!default;
+$--bigger-size:1rem!default;
+
+// eleUI 的时间选择框框的背景颜色
+$--eleInput-background: #ffffff!default;
+$--eleInput-font-color: #333333!default;
+$--eleInput-border-color: #dcdfe6!default;
+
+// eleUI pan的边框颜色
+$--elePane-border-color: #e8f0f7!default;
+$--elePane-background-color: #ffffff!default;
+
+// 号牌规则里面的下拉框的样式
+$--plateRule-select-background: #ffffff!default;
+$--plateRule-select-border: #ffffff!default;
+$--plateRule-select-font-color: #333333!default;
+
+// 高级搜搜-相似号牌的相似号牌背景色
+$--highSearch-likeplate-background: #FEFFFD!default;
+
+// eleUI 分页组件的背景色
+$--elePage-background: #ffffff!default;
+$--elePage-background-color: #ffffff!default;
+$--elePage-background-color-activate: #f2f9ff!default;
+$--elePage-input-border-color: #dcdfe6!default;
+
+// 过车 tollgate-title 中的ele下拉框的样式
+$--title-eleSelect-background: #ffffff!default;
+$--title-eleSelect-border: #DCDFE6!default;
+$--title-eleSelect-font-color: #666666!default;
+
+// eleUI 的数字输入框的加减按钮的样式
+$--eleInput-number-background: #F5F7FA!default;
+$--eleInput-number-border: #dcdfe6!default;
+
+// 过车搜索结果的表单样式
+$--result-table-border: #ebeef5!default;
+$--result-table-head: #F5F7FA!default;
+$--result-table-head-font-color: #333333!default;
+$--result-table-background: #FFFFFF!default;
+$--result-table-font-color: #666666!default;
+$--result-table-border-color: #ebeef5!default;
+
+// 查看过车信息的上一页下一页按钮
+$--result-switch-background: #ffffff!default;
+$--result-switch-background-active: #1671D5!default;
+$--result-switch-border: #DCDFE6!default;
+$--result-switch-font-color: #666666!default;
+$--result-switch-font-color-active: #ffffff!default;
+
+// 查看过车信息的近镜图和远景图的背景色
+$--window-checkBtn-dark: #dcdfe6!default;
+$--window-checkBtn-dark-font-color: #626066!default;
+$--window-checkBtn-light: #ffffff!default;
+$--window-checkBtn-light-font-color: #626066!default;
+$--window-checkBtn-border: #dcdfe6!default;
+
+// 查看过车详细信息的字段描述的背景色
+$--detail-title-background: #F5F7FA!default;
+
+// 2. 菜单背景色和菜单选色
+$--menu-background: #1671D5!default;
+$--menu-actived: #3A60D4!default;
+
+//菜单menu颜色
+$--menu-bgcolor: linear-gradient(90deg, #005bac 0%, #006ed0 50%, #005bac 100%), linear-gradient(#005bac, #005bac)!default;
+$--menu-map-bgcolor: linear-gradient(to right, #005bac, #006ed0)!default;
+$--menu-li-hover-bgcolor: #004c90!default;
+
+// 弹框的统一样式设置
+$dialog-header-backgroundColor: #1671D5!default;
+$dialog-header-fontColor: #FFFFFF!default;
+// 用作按钮的统一点击颜色
+$dialog-btn-activeColor: #1671D5!default;
+
+// reset kfrontbaseui css
+$--menu-item-fill:$--color-primary-bg !global!default;
+$--kc-submenu-title-hover:#426DF1 !global!default;
+
+//个人中心
+$--nav-personal-center-bg:#426DF1!default;
+$--nav-personal-border:#5276E6!default;
+//水印
+$--watermark-color:#a6a9ad!default;
+$--watermark-opacity:0.24!default;

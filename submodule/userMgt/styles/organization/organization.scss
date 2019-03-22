@@ -1,0 +1,120 @@
+
+.userMgt-organization {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	.user-left {
+		background-color: $--view-background;
+		height: 100%;
+		width: 16.4rem;
+		padding: $pdwidth;
+		margin-right: 0;
+		box-sizing: border-box;
+		.left-tree {
+			height: 100%;
+			.tree-title {
+				margin-bottom: .3rem;
+				padding-left: 0;
+				font-weight: normal;
+				font-size: .9rem;
+				color: $--sub-title-color;
+				>p{
+					display: inline-block;
+					float: right;
+					font-size: 0.7rem;
+					color: $--color-inactive;
+					i{
+						font-size: 0.9rem;
+						margin-right: 0.2rem;
+						line-height: 1.2rem;
+						vertical-align: middle;
+					}
+					span{
+						line-height: 1.2rem;
+						display: inline-block;
+						vertical-align: middle;
+						&:hover{
+							cursor: pointer;
+							color: $--font-icon-name-color;
+						}
+					}
+					&:hover i{
+						cursor: pointer;
+						color: $--icon-hover-primary;
+					}
+					&:hover {
+						cursor: pointer;
+						color: $--font-icon-name-color;
+					}
+				}
+			}
+		}
+	}
+	.user-center {
+		background-color: $--view-background;
+		width: 77.2rem !important;
+		height: 100%;
+		padding: $pdwidth;
+		margin-left:$pdwidth;
+		box-sizing: border-box;
+		.kc-form-item__label {
+			line-height: 1.8rem;
+			color: $--font-color;
+		}
+		.user-title {
+			height: 1.25rem;
+			line-height: 1.25rem;
+			margin-bottom: .3rem;
+			padding-left: 0;
+			font-size: .9rem;
+			color: $--sub-title-color;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.user-add {
+				.kc-button--text {
+					color: $--color-inactive;
+					i{
+						font-size: 0.9rem;
+					}
+					&:hover{
+						color:$--font-icon-name-color;
+						i{
+							color:$--icon-hover-primary;
+						}
+					}
+				}
+				span{
+					display: inline-block;
+					line-height: 1rem;
+					vertical-align: text-bottom;
+				}
+			}
+		}
+	}
+	.user-right {
+		background-color: $--view-background;
+		width: 16.4rem;
+		height: 100%;
+		padding: $pdwidth;
+		box-sizing: border-box;
+		overflow: hidden;
+		.role-title {
+			height: 1.25rem;
+			line-height: 1.25rem;
+			margin-bottom: .3rem;
+			padding-left: 0;
+			font-size: .9rem;
+			color: $--sub-title-color;
+		}
+		.kc-button--text .KD-xiangqing{
+			color: $--color-inactive;
+			&:hover{
+				color:$--color-primary;
+			}
+
+		}
+	}
+}
+

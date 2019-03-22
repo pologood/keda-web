@@ -1,0 +1,51 @@
+
+.userMgt-roleMan-functionMenu {
+	height: 100%;
+	.menu-row {
+		height: 100%;
+		.menu-col-item {
+			height: 100%;
+			.grid-content {
+				border: .05rem solid $--color-box-border;
+				border-radius: .2rem;
+				height: calc(100% - 0.8rem);
+				position: relative;
+				box-sizing: border-box;
+				top:.8rem;
+				.header-bg {
+					box-sizing: border-box;
+					position: relative;
+					width: 100%;
+					height: 2rem;
+					line-height: 2rem;
+					padding-left: .5rem;
+					font-size: $--small-size;
+					font-weight:600;
+					color: $--sub-title-active-color;
+					top: 0;
+					left: 0;
+					z-index: 2;
+					background-color: $--header-title-bg;
+				}
+				.menu-tree-wrapper {
+					position: relative;
+					width:100%;
+					height: calc(100% - 2rem);
+					overflow-y: auto;
+				}
+			}
+		}
+	}
+	.border-right {
+		border-right: 1px solid #ddd;
+	}
+	.banner-header {
+		background: #eaeff0;
+		height: 42px;
+		line-height: 42px;
+		padding-left: 6px;
+	}
+	.ivu-tree {
+		padding-left: 6px;
+	}
+}

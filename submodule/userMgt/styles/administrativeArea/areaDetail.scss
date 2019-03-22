@@ -1,0 +1,120 @@
+.userMgt-administrativeArea-areaDetail {
+	padding: .8rem;
+	background-color: $--view-background;
+	.detail-header {
+		display: flex;
+		justify-content: space-between;
+		.title {
+			font-size: 0.9rem;
+			font-weight: 500;
+			font-family: PingFangSC-Regular;
+			color: $--sub-title-color;
+		}
+
+		.newAdd {
+			display: inline-block;
+			font-size: 0.7rem;
+			color: $--font-color;
+			margin-left: 0.6rem;
+			i{
+				font-size: 0.9rem;
+				margin-right: 0.2rem;
+				line-height: 1.2rem;
+				vertical-align: middle;
+			}
+			span{
+				line-height: 1.2rem;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&:hover{
+				cursor: pointer;
+				color: $--font-icon-name-color;
+				i{
+					cursor: pointer;
+					color: $--icon-hover-primary;
+				}
+			}
+		}
+	}
+	.detail-content {
+		margin-top: 0.3rem;
+		.detail-form {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: $--form-bg;
+			border-radius: 0.2rem;
+			padding: 0.8rem;
+			.kc-form-item__label {
+				line-height: 1.8rem;
+				color: $--font-color;
+			}
+			.detail-item{
+				width: 18rem;
+				.kc-input{
+					.kc-input__inner {
+						background: $common-input-bg;
+						width: 100%;
+						height: 34px;
+						border: none;
+						border-radius: 4px;
+						background: $common-input-bg;
+						color: $--color-editable-input;
+					}
+					&.is-disabled{
+						.kc-input__inner {
+							background: $common-input-disable-bg;
+							color: $--color-disabled-input;
+						}
+					}
+				}
+			}
+			.kc-form-item {
+				padding: 0.5rem 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.detail-btn-group {
+		text-align: center;
+		padding-top: 1rem;
+		.btn-origin {
+			width: 6rem;
+			height: 2rem;
+			border-radius: 0.2rem;
+			padding: 0;
+		}
+		.btn-redact {
+			border: 1px solid $--button-border-color-active;
+			background-color: $--button-background-active;
+			color: $--button-font-color-active;
+			&:hover {
+				background-color: $--color-primary-bg;
+			}
+		}
+		.button--default {
+			border: 1px solid $--button-border-color;
+			background-color: $--button-background;
+			color: $--button-font-color;
+			&:hover {
+				border: 1px solid $--button-border-color-active;
+				background-color: $--button-background;
+			}
+		}
+		.btn-delete {
+			border: 1px solid $--button-border-color;
+			background-color: $--button-background;
+			color: $--button-font-color;
+			&:hover {
+				border: 1px solid $--button-border-color-active;
+				background-color: $--button-background;
+			}
+		}
+		.btn-current {
+			//background: #005bac;
+			//border: 1px solid #005bac;
+			//color: #fff;
+		}
+	}
+}

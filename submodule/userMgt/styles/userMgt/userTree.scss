@@ -1,0 +1,165 @@
+
+.userMgt-userMgt-userTree {
+	display: flex;
+	flex-direction: column;
+	background-color: $--view-background;
+	box-sizing: border-box;
+	height: calc(100% - 1.2rem);
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	.header {
+		>p{
+			display: inline-block;
+			float: right;
+			font-size: 0.7rem;
+			color: $--color-inactive;
+			i{
+				font-size: 0.9rem;
+				margin-right: 0.2rem;
+				line-height: 1.2rem;
+				vertical-align: middle;
+			}
+			span{
+				line-height: 1.2rem;
+				display: inline-block;
+				vertical-align: middle;
+				&:hover{
+					cursor: pointer;
+					color: $--font-icon-name-color;
+				}
+			}
+			&:hover i{
+				cursor: pointer;
+				color: $--icon-hover-primary;
+			}
+			&:hover {
+				cursor: pointer;
+				color: $--font-icon-name-color;
+			}
+		}
+		.search-content {
+			margin-top: 0.3rem;
+			box-sizing: border-box;
+			.search-group{
+				display: flex;
+				.kc-input--medium .kc-input__inner {
+					height: 1.8rem;
+					line-height: 1.8rem;
+					background: $common-input-bg;
+					border: solid 0.05rem $--color-box-border;
+				}
+			}
+			.input-with-select{
+				width: 100%;
+			}
+			.user-serach-button {
+				float: right;
+				height: 1.8rem;
+				width: 1.8rem;
+				padding: 0.25rem;
+				font-size: 1rem;
+				margin-left: 0.5rem;
+				background: $--color-box-bg;
+				border: 0.05rem solid $--button-border-color;
+				vertical-align: middle;
+				i {
+					font-size: 1rem;
+				}
+				&:hover {
+					background: $--color-box-bg;
+					border: 0.05rem solid $--button-border-color;
+				}
+			}
+			.search-size {
+				line-height: 1.8rem;
+				font-size: 1rem;
+				cursor: pointer;
+				margin-left: .6rem;
+				font-weight: normal;
+				margin-right: 10px;
+			}
+		}
+	}
+	.tree-wrapper {
+		flex: 1;
+		overflow-y: auto;
+		overflow-x: hidden;
+		margin-top: 0.8rem;
+		border:solid 1px $--color-box-border;
+		/deep/ .kc-scrollbar {
+			height: 98%;
+		}
+		/deep/ .kc-scrollbar_wrap {
+			overflow-x: hidden;
+		}
+		.kc-tree{
+			background-color: $--view-background;
+			color: $--kc-tree-color;
+			.kc-tree-node__content:hover{
+				background-color: $--color-td-bg-hover;
+				color: $--font-hover-color;
+			}
+			.kc-tree-node:focus > .kc-tree-node__content {
+				background-color: $--color-td-bg-hover;
+				color: $--font-hover-color;
+			}
+		}
+		.kc-tree--highlight-current .kc-tree-node.is-current>.kc-tree-node__content{
+			background-color: $--color-td-bg-hover;
+			color: $--font-hover-color;
+		}
+	}
+	.searchTreeData {
+		position: relative;
+		margin-top: 10px;
+		width: 100%;
+		height: calc(100% - 2.75rem);
+		overflow: auto;
+		background: $--table-bg;
+		border:solid 1px $--color-box-border;
+		.kc-table__empty-block{
+			height: calc(100% - 3rem);
+		}
+		table {
+			width: 100%;
+			border-spacing:0;
+			background: $--table-bg;
+			thead{
+				height: 48px;
+				background: $--table-bg;
+				th {
+					line-height: 2rem;
+					color: $-color-tree-search-table;
+					font-weight: 600;
+					border:solid 1px $--color-td-bordor;
+					font-size: $--small-size;
+					text-align: left;
+					text-indent: 10px;
+				}
+			}
+			td{
+				border:solid 1px $--color-td-bordor;
+				height: 2rem;
+				line-height: 2rem;
+				padding:0.2rem;
+				text-align: center;
+				max-width: 20px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				color:$--color-td;
+			}
+			tr:hover{
+				cursor: pointer;
+				background-color: $--color-td-bg-hover;
+				td{
+					color:$--color-td-font-hover;
+				}
+			}
+			td.center{
+				text-align: center;
+			}
+		}
+	}
+}

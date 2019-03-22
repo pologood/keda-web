@@ -1,0 +1,301 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+@import "common/var";
+@import "common/transition";
+
+@mixin menu-item {
+  height: 56px;
+  line-height: 56px;
+  font-size: $--menu-item-font-size;
+  color: $--menu-item-color;
+  padding: 0 20px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: border-color .3s, background-color .3s, color .3s;
+  box-sizing: border-box;
+  white-space: nowrap;
+
+  * {
+    vertical-align: middle;
+  }
+
+  i {
+    color: $--color-text-secondary;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $--menu-item-hover-fill;
+  }
+
+  @include when(disabled) {
+    opacity: 0.25;
+    cursor: not-allowed;
+    background: none !important;
+  }
+}
+
+@include b(menu) {
+  border-right: solid 1px #e6e6e6;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  background-color: $--menu-item-fill;
+  @include utils-clearfix;
+
+  @include m(horizontal) {
+  	border-right: none;
+	border-bottom: solid 0.05rem transparent;
+	  & > .kc-menu-item {
+        float: left;
+		width:150px;
+        height: 64px;
+		text-align: center;
+		font-size: .9rem;
+        line-height: 64px;
+	    padding: 0;
+        margin: 0;
+        color: $--color-text-secondary;
+		border-bottom-color: $--color-primary!important;
+      a,
+      a:hover {
+        color: inherit;
+      }
+
+      &:not(.is-disabled):hover,
+      &:not(.is-disabled):focus{
+        background-color: #fff;
+      }
+    }
+    & > .kc-submenu {
+      float: left;
+	  width:150px;
+      &:focus,
+      &:hover {
+        outline: none;
+        .kc-submenu__title {
+            color: $--color-text-primary;
+			border-bottom-color: $--menu-item-hover-fill !important;
+			background-color: $--menu-item-hover-fill;
+        }
+      }
+      &.is-active {
+        .kc-submenu__title {
+			border-bottom-color: $--menu-item-hover-fill !important;
+            color: $--color-text-primary;
+        };
+		  background-color: $--menu-item-hover-fill;
+      }
+      & .kc-submenu__title {
+        height: 2rem;
+        line-height: 2rem;
+        color: $--color-text-secondary;
+        &:hover {
+          background-color: $--menu-item-hover-fill!important;
+        }
+      }
+      & .kc-submenu__icon-arrow {
+		position: static;
+		vertical-align: middle;
+		margin-left: 8px;
+		margin-top: -3px;
+		color:#fff;
+      }
+    }
+    & .kc-menu {
+	  & .kc-menu-item,
+      & .kc-submenu__title {
+        background-color: rgba(54,109,222,.9);
+        float: none;
+	    height: 2.5rem;
+	    line-height: 2.5rem;
+		font-size: 0.8rem;
+        color: $--color-text-secondary;
+      }
+	  & .kc-menu-item.is-active,
+	  & .kc-submenu.is-active > .kc-submenu__title {
+			color: $--color-text-primary;
+			background: $--menu-item-hover-fill;
+			border-bottom-color: $--color-primary!important;
+	  }
+    }
+    & .kc-menu-item:not(.is-disabled):hover,
+    & .kc-menu-item:not(.is-disabled):focus {
+		outline: none;
+        color: $--color-text-primary;
+	    background: $--menu-item-hover-fill!important;
+		border-bottom-color: $--menu-item-hover-fill !important;
+    }
+    & > .kc-menu-item.is-active {
+        color: $--color-text-primary;
+		background: $--menu-item-active-fill;
+		border-bottom-color: $--menu-item-hover-fill !important;
+    }
+  }
+  @include m(collapse) {
+    width: 64px;
+
+    > .kc-menu-item,
+    > .kc-submenu > .kc-submenu__title {
+      [class^="kc-icon-"] {
+        margin: 0;
+        vertical-align: middle;
+        width: 24px;
+        text-align: center;
+      }
+      .kc-submenu__icon-arrow {
+        display: none;
+      }
+      span {
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+        display: inline-block;
+      }
+    }
+    > .kc-menu-item.is-active i {
+      color: inherit;
+    }
+
+    .kc-menu .kc-submenu {
+      min-width: 200px;
+    }
+
+    .kc-submenu {
+        position: relative;
+		width:150px;
+      & .kc-menu {
+        position: absolute;
+        margin-left: 5px;
+        top: 0;
+        left: 100%;
+        z-index: 10;
+        border: 1px solid $--border-color-light;
+        border-radius: $--border-radius-small;
+        box-shadow: $--box-shadow-light;
+      }
+
+      &.is-opened {
+        > .kc-submenu__title .kc-submenu__icon-arrow {
+          transform: none;
+        }
+      }
+    }
+  }
+  @include m(popup) {
+    z-index: 100;
+    min-width: 7.5rem;
+    border: none;
+    padding: 0;
+	background: none;
+    border-radius: $--border-radius-small;
+    //box-shadow: $--box-shadow-light;
+	box-shadow: 0 2px 10px rgba(54, 109, 222, 0.8);
+	  .kc-submenu .kc-submenu__title:hover{
+		 background: $--menu-item-hover-fill!important;
+	  }
+	  .kc-submenu .kc-submenu__title .kc-submenu__icon-arrow{
+		 color:#fff;
+	  }
+	  &-bottom-start {
+	  }
+	  &-right-start {
+		  margin-left: 5px;
+		  margin-right: 5px;
+	  }
+  }
+}
+@include b(menu-item) {
+  @include menu-item;
+
+  & [class^="kc-icon-"] {
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  @include when(active) {
+    color: $--color-primary;
+    i {
+      color: inherit;
+    }
+  }
+}
+
+@include b(submenu) {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  @include e(title) {
+    @include menu-item;
+
+    &:hover {
+      background-color: $--menu-item-hover-fill;
+    }
+  }
+  & .kc-menu {
+    border: none;
+  }
+  & .kc-menu-item {
+    height: 2.5rem;
+    line-height: 2.5rem;
+	padding: 0 0 0 12px;
+    min-width: 200px;
+  }
+  @include e(icon-arrow) {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -7px;
+    transition: transform .3s;
+    font-size: 12px;
+  }
+  @include when(active) {
+    .kc-submenu__title {
+      border-bottom-color: $--color-primary;
+    }
+  }
+  @include when(opened) {
+    > .kc-submenu__title .kc-submenu__icon-arrow {
+      transform: rotateZ(180deg);
+    }
+  }
+  @include when(disabled) {
+    .kc-submenu__title,
+    .kc-menu-item {
+      opacity: 0.25;
+      cursor: not-allowed;
+      background: none !important;
+    }
+  }
+  [class^="kc-icon-"] {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@include b(menu-item-group) {
+  > ul {
+    padding: 0;
+  }
+  @include e(title) {
+    padding: 7px 0 7px 20px;
+    line-height: normal;
+    font-size: 12px;
+    color: $--color-text-secondary;
+  }
+}
+
+.horizontal-collapse-transition .kc-submenu__title .kc-submenu__icon-arrow {
+  transition: .2s;
+  opacity: 0;
+}

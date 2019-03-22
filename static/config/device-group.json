@@ -1,0 +1,104 @@
+{
+	"deviceServiceList": {
+		"boxCamera": {
+			"groupType": "1",
+			"deviceTypes": "IPC",
+			"cameraForms": ["Box", "Bullet"],
+			"cameraAbilitys": [],
+			"name": "枪机",
+			"code": "boxCamera"
+		},
+		"speedDemoCamera": {
+			"groupType": "1",
+			"deviceTypes": "IPC",
+			"cameraForms": ["Dome", "SpeedDome"],
+			"cameraAbilitys": [],
+			"name": "球机",
+			"code": "speedDemoCamera"
+		},
+		"carTollgate": {
+			"groupType": "0",
+			"deviceTypes": "TOLLGATE",
+			"cameraForms": [],
+			"cameraAbilitys": [],
+			"name": "车辆卡口",
+			"code": "carTollgate"
+		},
+		"ePolice": {
+			"groupType": "0",
+			"deviceTypes": "EPOLICE",
+			"cameraForms": [],
+			"cameraAbilitys": [],
+			"name": "电警",
+			"code": "ePolice"
+		},
+		"peopleTollgate": {
+			"groupType": "4",
+			"deviceTypes": "IPC",
+			"cameraForms": [],
+			"cameraAbilitys": ["Bayonet_Human"],
+			"name": "人员卡口",
+			"code": "peopleTollgate"
+		},
+		"siteEnforcementRecorder": {
+			"groupType": "2",
+			"deviceTypes": "BWC",
+			"cameraForms": [],
+			"cameraAbilitys": [],
+			"name": "执法记录仪",
+			"code": "siteEnforcementRecorder"
+		},
+		"arDevice": {
+			"groupType": "3",
+			"deviceTypes": "IPC",
+			"ar": true,
+			"cameraForms": [],
+			"cameraAbilitys": [],
+			"name": "AR设备",
+			"code": "arDevice"
+		}
+	},
+	"groupServiceList": {
+		"tollgate": {
+			"groupType": "0",
+			"deviceTypes": "TOLLGATE",
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "车辆卡口",
+			"code": "carTollgate"
+		},
+		"video": {
+			"groupType": "1",
+			"deviceTypes": "IPC",
+			"cameraForms": "Box,Bullet,Dome,SpeedDome",
+			"cameraAbilitys": "",
+			"name": "视频",
+			"code": "video"
+		},
+		"siteEnforcementRecorder": {
+			"groupType": "2",
+			"deviceTypes": "BWC",
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "执法记录仪",
+			"code": "siteEnforcementRecorder"
+		},
+		"arDevice": {
+			"groupType": "3",
+			"deviceTypes": "IPC",
+			"ar": true,
+			"cameraForms": "",
+			"cameraAbilitys": "",
+			"name": "AR设备",
+			"code": "arDevice"
+		},
+		"peopleTollgate": {
+			"groupType": "4",
+			"deviceTypes": "IPC",
+			"cameraForms": "",
+			"cameraAbilitys": "Bayonet_Human",
+			"name": "人员卡口",
+			"code": "peopleTollgate"
+		}
+	}
+}

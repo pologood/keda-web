@@ -1,0 +1,93 @@
+.userMgt-userMgt-userSelect{
+	text-align: center;
+	.pagination-wrapper{
+		box-sizing: border-box;
+		margin-top: 0.8rem;
+		width: 100%;
+		height: 2rem;
+	}
+	.kc-table th {
+		text-align: left;
+	}
+
+	.kc-table td {
+		text-align: left;
+	}
+	.left-header {
+		background-color:$--color-box-bg;
+		height: 2rem;
+		span {
+			line-height: 2rem;
+			float: left;
+			padding-left: 0.85rem;
+		}
+	}
+	.ez-table {
+		width: 100%;
+		border: 0.05rem solid $--color-box-border;
+		border-radius: 0.1rem;
+		height: 20rem;
+	}
+
+	.kc-tree > .kc-tree-node {
+		min-width: 100%;
+		display: inline-block !important;
+	}
+
+	.tree {
+		overflow: auto;
+		height: calc(100% - 2rem);
+		/*height: 100%;*/
+	}
+
+	.kc-content {
+		border-radius: 0.25rem;
+		margin: 0.1rem;
+	}
+
+	.left-box {
+		border: 0.05rem solid #ebeef5;
+		width: 33.33333%;
+		float: left;
+		padding: 0;
+		margin-right: 0.35rem;
+	}
+
+	.right-box {
+		width: 66.66666%;
+		float: right;
+		padding: 0;
+	}
+
+	.dialog-footer {
+		width: 66.66666%;
+		text-align: center;
+		padding-left: 33.33333%;
+	}
+
+	.kc-table th {
+		background: $--color-th-bg;
+		height: 2rem;
+	}
+
+	.kc-dialog__body {
+		padding: 0.6rem;
+	}
+
+	.kc-button--primary {
+		margin-top: 1rem;
+	}
+	.kc-modal__header{
+		padding: 0.8rem;
+		background: $--color-primary;
+		.kc-icon-close:hover{
+			color: $--color-white-icon!important;
+		}
+		span{
+			color: $--color-text-white;
+		}
+		i{
+			color:$--color-white-icon;
+		}
+	}
+}

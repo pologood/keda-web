@@ -1,0 +1,35 @@
+{
+	"code": 200,
+	"status":200,
+	"result":[
+		{
+			"name": "Welcome",
+			"parent": "welcome",
+			"type": 8000,
+			"id": "welcome",
+			"url": "",
+			"method": "GET",
+			"order": 1,
+			"children": [
+				{
+					"name": "Page1",
+					"parent": "Welcome",
+					"type": 8000,
+					"id": "welcome-page1",
+					"url": "/welcome/page1",
+					"method": "GET",
+					"order": 1
+				},
+				{
+					"name": "Page2",
+					"parent": "Welcome",
+					"type": 8000,
+					"id": "welcome-page2",
+					"url": "/welcome/page2",
+					"method": "GET",
+					"order": 1
+				}
+			]
+		},
+	]
+}

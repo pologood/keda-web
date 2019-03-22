@@ -1,0 +1,121 @@
+
+.userMgt-roleMan-videoResource-attrAuth {
+	position: relative;
+	box-sizing: border-box;
+	height:100%;
+	.bg-grey{
+		position: absolute;
+		width: 100%;
+		height: 2rem;
+		z-index: 0;
+		top: -2rem;
+		left: 0;
+		background-color:$--color-th-bg;
+		table {
+			position: absolute;
+			top: 0rem;
+			width: 100%;
+			border-spacing:0;
+			thead {
+				width: 100%;
+				background: $--color-th-bg;
+				height: 2rem;
+				line-height: 2rem;
+				border:none;
+				tr {
+					width:100%;
+					height: 2rem;
+					th{
+						border: none;
+						font-weight:600;
+						height: 1.5rem;
+						line-height: 1.5rem;
+						color:$--sub-title-active-color;
+						font-weight: 600;
+						font-size: $--small-size;
+						padding:0 0.4rem 0 0.5rem;
+						text-align:center;
+						&:first-child{
+							width: 42%;
+							text-align:left;
+							span.delete-all{
+								cursor:pointer;
+								float:right;
+								i{
+									font-size: $--bigger-size;
+									font-weight: normal;
+								}
+							}
+						}
+						label.kc-checkbox{
+							display: flex;
+							align-items: center;
+							flex-direction: row;
+							justify-content: space-around;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	.table-content {
+		width:100%;
+		padding: 0.2rem;
+		height: calc(100% - 2rem);
+		overflow-y: auto;
+		margin-top: 2rem;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		table {
+			position: relative;
+			top: 0rem;
+			width: 100%;
+			border-spacing:0;
+			tbody {
+				overflow-x: hidden;
+				tr{
+					td {
+						text-align: center;
+						padding: 0.5rem 0.5rem;
+						font-size: $--small-size;
+						font-weight:400;
+						color:$--color-text;
+						border-top: none;
+						border-right: none;
+						border-bottom: 1px solid $--color-td-bordor;
+						&:first-child{
+							width:40%;
+							text-align: left;
+							text-indent: 0;
+							border-right: 1px solid $--color-td-bordor;
+							span.attr-name{
+								white-space: nowrap;
+								max-width: 8rem;
+								overflow: hidden;
+								display: inline-block;
+								text-overflow: ellipsis;
+							}
+							span.attr-delete {
+								float: right;
+								cursor: pointer;
+							}
+						}
+					}
+					&:hover{
+						cursor: pointer;
+						background-color: $--color-th-bg
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+
+

@@ -1,0 +1,25 @@
+import Global from 'utils/global';
+let constants = {
+	WIN_LOGIN: 'login',
+	HOME_PAGE_LOGIN: '/#/',
+	MENU_NAME: 'kd-kiaf-menu',
+
+	THEME: Global.getAppName() + '_theme',
+	THEME_LIGHT: 'light',
+	THEME_DARK: 'dark',
+	CRX_EVENT_OPEN_WINDOWS: 'openWindows',
+	CRX_EVENT_SWITCH_WINDOWS: 'windowSwitch',
+
+	EVENT_BUS_CODE_CLOSE_ALL_WIN: Global.getAppName() + '_EVENT_BUS_CODE_CLOSE_ALL_WIN',
+	EVENT_BUS_CODE_CLOSE_LOGIN_WIN: Global.getAppName() + '_EVENT_BUS_CODE_CLOSE_LOGIN_WIN',
+	EVENT_BUS_CODE_CHECK_LOGINED: Global.getAppName() + '_EVENT_BUS_CODE_CHECK_LOGINED',
+	EVENT_BUS_CODE_CHECK_LOGINED_CALLBACK: Global.getAppName() + '_EVENT_BUS_CODE_CHECK_LOGINED_CALLBACK',
+	EVENT_BUS_CODE_CHANGE_THEME: Global.getAppName() + '_EVENT_BUS_CODE_CHANGE_THEME',
+
+	STORAGE_KEY_USER_INFO: Global.getAppName() + '_STORAGE_KEY_USER_INFO',
+	STORAGE_KEY_JWT_TOKEN: Global.getAppName() + '_STORAGE_KEY_JWT_TOKEN',
+	STORAGE_KEY_REFRESH_TOKEN: Global.getAppName() + '_STORAGE_KEY_REFRESH_TOKEN',
+	STORAGE_KEY_REMEMBER_ME: Global.getAppName() + '_STORAGE_KEY_REMEMBER_ME',
+	STORAGE_KEY_WINDOWS: Global.getAppName() + '_STORAGE_KEY_WINDOWS'
+};
+export default constants;

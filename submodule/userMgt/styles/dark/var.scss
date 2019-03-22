@@ -1,0 +1,127 @@
+// 换肤功能的公共样式值设置
+$--color-primary: #0E0F1A!default;
+$--color-primary-active:#274BB7!default;
+
+$--color-success:#64C42D!default;
+$--color-warning:#F3AC34!default;
+$--color-danger:#F76B69!default;
+$--color-inactive:#999999!default;
+//-----------------背景色
+//default
+$--body-background: #000000 !default;
+$--view-background: #161824!default;
+$--white-bg:#fff;
+$--color-primary-bg: #161824!default;
+
+$--color-box-bg:#0E1017!default;
+$--color-box-bg-light:#EAF5FF!default;
+
+$--breadcrumbs-bg:#000!default;//面包屑导航颜色
+$--modal-header-bg:#2F3653!default;
+$--sub-title-active-bg:#161824!default;
+//title
+$--header-title-bg:#0E1017!default;
+// table
+$--table-bg:#161824!default;
+$--color-th-bg:#0E1017!default;
+$--color-td-bg-hover:#0E1017!default;
+$--color-td-bg-active:#0E1017!default;
+$--color-model-td-bg-hover:#F5F7FA!default;
+//vav-tag
+$--nav-tag-bg:#fff!default;
+// button
+$--button-background: $--color-primary!default;
+$--button-background-active: #426DF1!default;
+//  form
+$--form-bg-search:#0E1017!default;
+$--form-bg:#0E1017!default;
+$common-input-bg:#151722!default;
+$common-input-disable-bg:#151722!default;
+$common-bg-inner: #0E1017!default;
+$common-textarea-bg: #151722!default;
+$common-dialog-form-bg: rgba(237,240,248,1)!default;
+//model
+$--model-content-title-bg:#F5F7FA!default;
+$--model-title-input-bg:#FFF!default;
+
+$--webkit-scrollbar-track-bg:none!default;
+$--webkit-scrollbar-thumb-bg:#426DF1!default;
+$--webkit-scrollbar-thumb-shadow: rgba(0, 0, 0, 0)!default;
+$--webkit-scrollbar-track-shadow: rgba(0, 0, 0, 0)!default;
+//-----------------font颜色
+//default
+$--font-color:#60688D!default;
+$--font-color2:#333!default;
+$--font-hover-color:#fff!default;
+$--font-icon-name-color:#426DF1!default;
+$--kc-tree-color: #5D6071!default;
+//title
+$--min-title-color:#60688D!default;
+$--sub-title-color:#fff!default;
+$--tab-title-color:#60688D!default;
+$--sub-title-active-color:#409EFF!default;
+
+$--lable-font-color:#333!default;
+
+$--list-font-color:#5C6487!default;
+$--color-text-white:#FFF!default;
+$--color-h3: #303133!default;
+
+$--color-text:#60688D!default;
+$--color-text-active:#ffffff!default;
+$--color-text-placeholder:#DCDFE6!default;
+//model
+$--model-content-title-color:#333!default;
+
+//disabled input
+$--color-disabled-input:#606266!default;
+//editable input
+$--color-editable-input:#c0c4cc!default;
+
+// table
+$--color-th:#fff!default;
+$--color-td:#5D6071!default;
+$--color-td-font-hover:#fff!default;
+$-color-tree-search-table:#9093A6!default;
+// button
+$--button-font-color: #5D6588!default;
+$--button-font-color-active: #ffffff!default;
+
+//-----------------border 颜色
+//default
+$--border-white:#fff!default;
+$--color-box-border:#1C2135!default;
+// table
+$--color-td-bordor:#1C2135!default;
+$--color-mobel-td-border:#EBEEFA!default;
+// button
+$--button-border-color: #1C2135!default;
+$--button-border-color-active: #426DF1!default;
+//checkbox
+$--checkbox-border-color:#516080!default;
+//model
+$--model-content-box-border:#EBEEFA;
+
+//-----------------icon 颜色
+//default
+$--icon-font-color:#60688D!default;
+$--icon-font-heavy-color:#426DF1!default;
+$--color-white-icon:#ffffff!default;
+$--icon-hover-primary:#426DF1!default;
+// table
+$--color-td-option-icon:#60688D!default;
+$--color-td-option-icon-edit-hover:#03DE65!default;
+$--color-td-option-icon-delete-hover:#FF2366!default;
+// button
+$--button-icon-color:#426DF1!default;
+
+//字体大小定义
+$--xxxxxsmall-size:0.2rem!default;
+$--xxxxsmall-size:0.3rem!default;
+$--xxxsmall-size:0.4rem!default;
+$--xxsmall-size:0.5rem!default;
+$--xsmall-size:0.6rem!default;
+$--small-size:0.7rem!default;
+$--middle-size:0.8rem!default;
+$--big-size:0.9rem!default;
+$--bigger-size:1rem!default;

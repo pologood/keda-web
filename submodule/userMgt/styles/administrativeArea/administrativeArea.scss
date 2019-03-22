@@ -1,0 +1,29 @@
+$header-bg: #eaeff0;
+.userMgt-administrativeArea {
+	font-size: 0.7rem;
+	height: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	> .area-left {
+		background-color: $--view-background;
+		width: 16.4rem !important;
+	}
+
+	> .area-right {
+		background-color: $--view-background;
+		width: 77.2rem !important;
+		margin-left: $pdwidth;
+	}
+
+	.kc-button + .kc-button {
+		margin-left: 0;
+	}
+	// 搜索框组合
+	.search-group {
+		display: flex;
+		.input-with-select {
+			width: 80%;
+		}
+	}
+}

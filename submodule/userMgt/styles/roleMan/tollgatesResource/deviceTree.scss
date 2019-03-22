@@ -1,0 +1,69 @@
+
+.userMgt-roleMan-tollgatesResource-deviceTree {
+	overflow: hidden;
+	height: 100%;
+	.header-bg {
+		background-color: $--header-title-bg;
+		padding-left: 0.5rem;
+		height: 2rem;
+		line-height:2rem;
+		font-size:$--small-size;
+		color: $--sub-title-active-color;
+		font-weight:600;
+	}
+	.search-box{
+		display: flex;
+		align-items: center;
+		overflow:auto;
+		padding: 0.5rem 1rem;
+		.kc-input--medium .kc-input__inner {
+			background: $common-input-bg;
+			border: solid 0.05rem $--color-box-border;
+		}
+		.user-serach-button{
+			height: 1.8rem;
+			width: 1.8rem;
+			padding: 0.25rem;
+			font-size: $--bigger-size;
+			background: $--color-box-bg;
+			border: 0.05rem solid $--button-border-color;
+			vertical-align: middle;
+			margin-left:0.5rem;
+			i{
+				font-size: $--bigger-size;
+			}
+			&:hover {
+				background: $--color-box-bg;
+				border: 0.05rem solid $--button-border-color;
+			}
+		}
+		.KD-sousuo.search-size {
+			line-height: 1.8rem;
+			font-size: $--bigger-size;
+			cursor: pointer;
+			font-weight: normal;
+			margin-right: 10px;
+		}
+	}
+	.search-table {
+		box-sizing: border-box;
+		height: 100%;
+		padding: 0 0.5rem 0.5rem;
+	}
+	.kc-icon-search {
+		color:$--button-icon-color;
+		cursor: pointer;
+	}
+	.back-tree{
+		cursor: pointer;
+		display: inline-block;
+		margin-left: 1rem;
+	}
+	.dev-body {
+		height: calc(100% - 5rem);
+		overflow-y: auto;
+		.left-tree{
+			height: 100%;
+		}
+	}
+}

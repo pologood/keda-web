@@ -1,0 +1,119 @@
+
+.userMgt-roleMan-videoResource-device {
+	height: 100%;
+	.right-top {
+		background: $--color-th-bg;
+		height: 2rem;
+		line-height: 2rem;
+		font-size: $--small-size;
+		box-sizing: border-box;
+		.change-radio {
+			color: $--font-color;
+			width: 6rem;
+			display: inline-block;
+			text-align: center;
+			cursor: pointer;
+			font-weight: 600;
+			background: none;
+		}
+		.radio-active {
+			color:$--sub-title-active-color;
+			background: $--sub-title-active-bg;
+		}
+		i {
+			float: right;
+			line-height: 2rem;
+			margin-right: 0.75rem;
+			font-size: $--bigger-size;
+			cursor: pointer;
+		}
+
+	}
+	.device-table-content {
+		position: relative;
+		padding:0 0.2rem;
+		height: calc(100% - 2rem);
+		margin-top: 0.5rem;
+		overflow-y: auto;
+		box-sizing: border-box;
+		table {
+			width: 100%;
+			border-spacing:0;
+			font-size: $--small-size;
+			thead {
+				width: 100%;
+				height: 2rem;
+				line-height: 2rem;
+				border:none;
+				tr {
+					width:100%;
+					height: 2rem;
+					th{
+						border: none;
+						font-weight:600;
+						height: 1.5rem;
+						line-height: 1.5rem;
+						.kc-input--medium .kc-input__inner {
+							background: $common-input-bg;
+							border: solid 0.05rem $--color-box-border;
+						}
+						.search-size {
+							line-height: 1.8rem;
+							font-size: $--bigger-size;
+							cursor: pointer;
+							font-weight: normal;
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+			tbody {
+				tr {
+					border-bottom: 1px solid $--color-td-bordor;
+					td {
+						text-align: center;
+						padding: 0.5rem 0.5rem;
+						font-size: $--small-size;
+						font-weight:400;
+						color:$--color-text;
+						border-top: none;
+						border-right: none;
+						border-bottom: 1px solid $--color-td-bordor;
+						span.device-name {
+							white-space: nowrap;
+							max-width: 8rem;
+							overflow: hidden;
+							display: inline-block;
+							text-overflow: ellipsis;
+						}
+						.device-delete {
+							float: right;
+							cursor: pointer;
+						}
+						&:first-child {
+							text-align: left;
+							text-indent: 0;
+							border-right: 1px solid $--color-td-bordor;
+						}
+					}
+					&:hover{
+						cursor: pointer;
+						background-color: $--color-th-bg
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+
+
+			}
+		}
+		.kc-table__empty-block {
+			position: relative;
+			min-height: 3rem;
+			text-align: center;
+			width: 100%;
+			height: calc(100% - 2.4rem);
+		}
+	}
+}

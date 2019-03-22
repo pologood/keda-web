@@ -1,0 +1,163 @@
+
+.userMgt-organization-detailOfOrganization {
+	background-color: $--view-background;
+	padding: 0;
+	height: 95.5%;
+	.form {
+		padding: 1.2rem;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: $--form-bg;
+		.kc-input{
+			.kc-input__inner {
+				height: 2rem !important;
+				width: 100% ;
+				border: none;
+				border-radius: 4px;
+				background: $common-input-bg ;
+				color: $--color-editable-input;
+			}
+			&.is-disabled{
+				.kc-input__inner {
+					background: $common-input-disable-bg;
+					color: $--color-disabled-input;
+				}
+			}
+		}
+		.kc-select {
+			width: 100%;
+		}
+		.allInputs {
+			padding-bottom: 0;
+			width: 33.33%;
+			display: flex;
+		}
+		.text-area{
+			padding-bottom: 0;
+			width: 100%;
+			display: flex;
+			float: left;
+			.kc-textarea{
+				&.is-disabled{
+					.kc-textarea__inner{
+						background: $common-input-disable-bg;
+						color: $--color-disabled-input;
+					}
+				}
+			}
+		}
+		.kc-form-item__content{
+			flex: 1;
+			padding-right: .5rem
+		}
+		.kc-form-item{
+			margin-right: 0 !important;
+		}
+		.kc-textarea__inner {
+			width: 100% !important;
+			border: none;
+			border-radius: 4px;
+			background: $common-textarea-bg;
+			color: $--color-editable-input;
+		}
+		.clear{
+			clear: both
+		}
+	}
+	.modal-input-group {
+		display: flex;
+		align-items: center;
+		.input-with-select {
+			width: 14rem;
+		}
+		.kc-button {
+			height: 2rem;
+			margin-left: .5rem;
+		}
+		.search-size {
+			line-height: 2rem;
+			font-size: 1rem;
+			margin-right: .2rem;
+			cursor: pointer;
+			font-weight: normal;
+		}
+		.kc-input__inner {
+			height: 2rem !important;
+			width: 14rem;
+		}
+	}
+	.area-content {
+		height: 22rem;
+		overflow-y: auto;
+	}
+	.area-table {
+		margin-top: .5rem;
+		.pagination {
+			margin-top: .5rem
+		}
+	}
+
+	.banner-header {
+		height: 30px;
+		background-color: #1c6aae;
+		color: white;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.tree-list {
+		width: 100%;
+		height: 300px;
+		padding: 10px;
+	}
+	.kc-dialog__body {
+		padding: 15px 20px;
+	}
+	.bottom-anniu {
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.kc-form-item {
+		margin-bottom: 1rem;
+	}
+	.allInputs {
+		padding-bottom: 0;
+	}
+	.btn-group {
+		.btn-origin {
+			width: 6rem;
+			height: 2rem;
+			border-radius: 0.2rem;
+			padding: 0;
+		}
+		.button--primary {
+			border: 1px solid $--button-border-color-active;
+			background-color: $--button-background-active;
+			color: $--button-font-color-active;
+			&:hover {
+				background-color: $--color-primary-bg;
+			}
+		}
+		.button--default {
+			border: 1px solid $--button-border-color;
+			background-color: $--button-background;
+			color: $--button-font-color;
+			&:hover {
+				border: 1px solid $--button-border-color-active;
+				background-color: $--button-background;
+			}
+		}
+		.btn-delete {
+			border: 1px solid $--button-border-color;
+			background-color: $--button-background;
+			color: $--button-font-color;
+			&:hover {
+				border: 1px solid $--button-border-color-active;
+				background-color: $--button-background;
+			}
+		}
+	}
+}
+

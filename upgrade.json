@@ -1,0 +1,43 @@
+{
+	"versions": {
+		"1.2.0-RELEASE":{
+			"replace":[
+				"/build/",
+				"/config/",
+				"/main/index.html",
+				"/static/scripts/",
+				"/utils/auth.js",
+				"/utils/constants.js",
+				"/utils/event-bus.js",
+				"/utils/util.js",
+				"/utils/global.js",
+				"/static/theme/light/",
+				"/static/theme/dark/",
+				"/main/views/layout/",
+				"/main/styles/layout/",
+				"/main/styles/dark/",
+				"/main/styles/light/"
+			]
+		},
+		"1.2.2-alpha":{
+			"replace":[
+				"/build/",
+				"/config/",
+				"/main/index.html",
+				"/static/scripts/",
+				"/utils/auth.js",
+				"/utils/constants.js",
+				"/utils/event-bus.js",
+				"/utils/util.js",
+				"/utils/global.js",
+				"/static/theme/light/",
+				"/static/theme/dark/",
+				"/main/views/layout/",
+				"/main/styles/layout/",
+				"/main/styles/dark/",
+				"/main/styles/light/"
+			]
+		}
+	}
+}
+

@@ -1,0 +1,58 @@
+{
+	"BASE_URL": "http://dev.ctsp.kedacom.com/kiaf-server",
+	"AJAX_TIMEOUT": 30000,
+	"CLOUD_RBAC_URL": "http://dev.ctsp.kedacom.com/cloud-rbac",
+	"CLIENT_SIGN": "kiaf-server",
+	"REFRESH_TOKEN_URL": "http://192.168.7.107:8081/ezview/commonAuth/refreshToken",
+	"SECRET_KEY": "kedacom",
+	"WINDOWS": [
+		{
+			"windowId": "kiafPrimary",
+			"primary": true,
+			"url": "/#/welcome/page1"
+		},
+		{
+			"windowId": "kiafMap",
+			"url": "/#/welcome/map"
+		}
+	],
+	"POPUP": "Y",
+	"MENU": [
+		{
+			"children": [{
+				"id": "page1",
+				"method": "",
+				"name": "Page1",
+				"url": "/welcome/page1"
+			},{
+				"id": "page2",
+				"method": "",
+				"name": "Page2",
+				"url": "/welcome/page2"
+			}],
+			"id": "welcome",
+			"name": "Welcome",
+			"url": ""
+		},
+		{
+			"children": [{
+				"id": "test",
+				"method": "",
+				"name": "test",
+				"url": "/exercise/testList"
+			},{
+				"id": "page22",
+				"method": "",
+				"name": "Page2",
+				"url": "/welcome/page2"
+			}],
+			"id": "exercise",
+			"name": "Exercise",
+			"url": ""
+		}
+	],
+	"AJAX": {
+		"timeout": 30000 ,
+		"withCredentials": false
+	}
+}
